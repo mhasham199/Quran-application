@@ -1,0 +1,13 @@
+.surah-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: box-shadow 0.3s;
+}
+
+.surah-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

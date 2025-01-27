@@ -1,0 +1,103 @@
+.landing-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.landing-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.surah-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.surah-card {
+  width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  cursor: pointer;
+}
+
+.surah-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-color: #16a085;
+  background-color: #f8f9fa;
+}
+
+.surah-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.surah-number {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.diamond {
+  width: 50px;
+  height: 50px;
+  background: #16a085;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transform: rotate(45deg); /* Diamond shape */
+}
+
+.diamond span {
+  transform: rotate(-45deg); /* Correct text orientation */
+}
+
+.surah-info {
+  text-align: left;
+}
+
+.roman-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.english-name {
+  font-size: 1rem;
+  color: #34495e;
+  font-style: italic;
+}
+
+.surah-name-arabic {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-family: "Amiri", serif;
+}
+
+.surah-ayahs {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #2980b9;
+  text-transform: uppercase;
+}

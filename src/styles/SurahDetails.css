@@ -1,0 +1,179 @@
+.surah-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.surah-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.ayah-count {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+}
+
+/* .translation-selector {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.radio-label {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #34495e;
+} */
+
+.header-container {
+  position: fixed; /* Header ko top par fix karne ke liye */
+  top: 0; /* Top se bilkul start karna */
+  right: 0;
+  width: 77%; /* Header ko puri width tak rakhna */
+  background-color: #ffffff; /* Background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better appearance */
+  z-index: 1000; /* High z-index taake dusri cheezon ke neeche na ho */
+}
+
+.header-top {
+  display: flex; /* Horizontal alignment */
+  justify-content: center; /* Surah title aur ayah count ke beech space */
+  align-items: center; /* Vertical alignment */
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd; /* Divider line between top and bottom parts */
+  gap: 100px;
+}
+
+.header-top h1,
+.header-top h2 {
+  margin: 0; /* Remove default margin */
+}
+
+.header-bottom {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column; /* Items vertically arranged */
+}
+
+.translation-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Radio buttons ko wrap karne ke liye agar screen chhoti ho */
+  gap: 10px;
+}
+
+.radio-label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.ayahs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 120px;
+}
+
+.ayah-container {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ayah-arabic {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: right;
+  font-family: "Amiri", serif;
+}
+
+.ayah-number {
+  font-weight: bold;
+  color: #16a085;
+}
+
+.ayah-translation {
+  font-size: 1rem;
+  color: #34495e;
+  text-align: right;
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-optical-sizing: auto;
+}
+
+.surah-page-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  position: fixed; /* Sidebar ko fixed banane ke liye */
+  top: 0; /* Top se starting point set karna */
+  left: 0; /* Page ke left side par fix karna */
+  height: 100vh; /* Sidebar ko puri screen ki height tak rakhna */
+  overflow-y: auto; /* Sirf sidebar ke andar scrolling allow karna */
+}
+
+.search-bar {
+  width: 96%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.surah-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.surah-item {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #2c3e50;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+}
+
+.surah-item:hover {
+  background-color: #e8e8ff;
+}
+
+.surah-item.active {
+  background-color: #16a085;
+  color: #fff;
+  scroll-margin-top: 50px; /* To adjust the scroll position */
+}
+
+.surah-content {
+  width: 75%;
+  margin-left: 25%; /* Sidebar ki width ke barabar margin rakhna */
+  padding: 20px;
+}
+
+.ayah-container {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
